@@ -10,7 +10,7 @@ return [
     'Login'         =>       'Đăng nhập',
     'Logout'        =>       'Đăng Xuất',
     'Register'      =>       'Đăng kí',
-    'Search'        =>       'Tìm kiếm...',
+    'Search'        =>       'Bạn đang muốn tìm gì...',
     'Producer'      =>       'Hãng Sản Xuất',
 
 ];

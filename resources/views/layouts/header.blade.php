@@ -1,7 +1,7 @@
-<header id="header" class="header">
+<header id="header" class="header pt-2 pb-2" style="padding: 5px 0;">
   <div class="container">
     <div class="row display-flex">
-      <div class="col-md-2 margin-auto trigger-menu">
+      <div class="col-md-3 margin-auto trigger-menu">
 
         <button type="button" class="navbar-toggle collapsed visible-xs" id="trigger-mobile">
           <span class="sr-only">Toggle navigation</span>
@@ -11,18 +11,22 @@
         </button>
 
         <div class="logo">
-          <a class="logo-wrapper" href="{{ route('home_page') }}" title="{{ config('app.name') }}"><img src="{{ asset('images/chopper-311697_960_720.webp') }}" alt="{{ config('app.name') }}"></a>
+          <a style="display:block ;width: 30rem;" class="logo-wrapper" href="{{ route('home_page') }}" title="{{ config('app.name') }}"><img src="{{ asset('images/logo.svg') }}" alt="{{ config('app.name') }}"></a>
         </div>
       </div>
       <div class="col-md-3 margin-auto">
         <div class="search">
           <form class="search-bar" action="{{ route('search') }}" method="get" accept-charset="utf-8">
             <input class="input-search" type="search" name="search_key" placeholder="{{ __('header.Search') }}" autocomplete="off">
-            <button type="submit"><i class="fas fa-search"></i></button>
+            <button type="submit" style="display: flex;
+            justify-content: center;
+            align-items: center;">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="search" width="1em" height="1em" fill="black" aria-hidden="true"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg>
+            </button>
           </form>
         </div>
       </div>
-      <div class="col-md-7 hd-bg-white main-menu-responsive">
+      <div class="col-md-6 main-menu-responsive">
         <div class="main-menu">
           <div class="nav">
             <ul>

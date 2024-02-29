@@ -3,6 +3,49 @@
 @section('title', 'ໜັ້າຫຼັກ')
 
 @section('content')
+<div class="sub-header">
+  <div class="sub-header__item first">
+    <div class="icon"><img src="{{asset('images/menu-bar.svg')}}" alt=""></div>
+    <div class="text">DANH MỤC</div>
+    <div class="icon"><img src="{{asset('images/menu-down-circle.svg')}}" alt=""></div>
+  </div>
+  <div class="sub-header__item d-flex">
+    <div><img src="{{asset('images/giao-nhanh-2h.webp')}}" alt=""></div>
+    <div>
+      <div class="sub-menu__item-top">Giao nhanh 2h</div>
+      <div class=sub-menu__item-bottom>Miễn phí-An toàn</div>
+    </div>
+  </div>
+  <div class="sub-header__item d-flex">
+    <div><img src="{{asset('images/giao-nhanh-2h.webp')}}" alt=""></div>
+    <div>
+      <div class="sub-menu__item-top">Tư vấn miễn phí</div>
+      <div class=sub-menu__item-bottom>19008198</div>
+    </div>
+  </div>
+  <div class="sub-header__item d-flex">
+    <div><img src="{{asset('images/giao-nhanh-2h.webp')}}" alt=""></div>
+    <div>
+      <div class="sub-menu__item-top">Đổi trả miễn phí</div>
+      <div class=sub-menu__item-bottom>Miễn phí-An toàn</div>
+    </div>
+  </div>
+  <div class="sub-header__item d-flex">
+    <div><img src="{{asset('images/giao-nhanh-2h.webp')}}" alt=""></div>
+    <div>
+      <div class="sub-menu__item-top">Miễn phí thanh toán</div>
+      <div class=sub-menu__item-bottom>Visa Master ATM</div>
+    </div>
+  </div>
+  <div class="sub-header__item d-flex">
+    <div><img src="{{asset('images/giao-nhanh-2h.webp')}}" alt=""></div>
+    <div>
+      <div class="sub-menu__item-top">Trả góp lãi 0%</div>
+      <div class=sub-menu__item-bottom>Online - Tận Nhà</div>
+    </div>
+  </div>
+</div>
+
   <div class="site-home">
     <section class="section-advertise">
       <div class="row">
@@ -19,7 +62,7 @@
         <div class="col-md-4">
           <div class="new-posts">
             <div class="posts-header">
-              <h3 class="posts-title">ຂ່າວສານ ເຕັກໂນໂລຢີ</h3>
+              <h3 class="posts-title">Tin công nghệ</h3>
             </div>
             <div class="posts-content">
               @foreach($data['posts'] as $post)
