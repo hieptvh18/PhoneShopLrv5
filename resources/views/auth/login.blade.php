@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'ເຂົ້າສູ່ລະບົບ')
+@section('title', 'Đăng nhập')
 
 @section('content')
 
@@ -15,7 +15,7 @@
 
   <div class="site-login">
       <div class="login-body">
-        <h2 class="title">ເຂົ້າສູ່ລະບົບ</h2>
+        <h2 class="title">Đăng nhập</h2>
         <form action="{{ route('login') }}" method="POST" accept-charset="utf-8">
           @csrf
 

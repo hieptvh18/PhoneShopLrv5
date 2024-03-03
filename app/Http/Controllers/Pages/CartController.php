@@ -158,7 +158,7 @@ class CartController extends Controller
       return redirect()->route('login')->with(['alert' => [
         'type' => 'info',
         'title' => 'Thông Báo',
-        'content' => 'Bạn hãy ເຂົ້າສູ່ລະບົບ để mua hàng!'
+        'content' => 'Bạn hãy đăng nhập để mua hàng!'
       ]]);
     }
   }

@@ -47,7 +47,7 @@ class OrderController extends Controller
       return redirect()->route('login')->with(['alert' => [
         'type' => 'warning',
         'title' => 'Cảnh Báo',
-        'content' => 'Bạn phải ເຂົ້າສູ່ລະບົບ để sử dụng chức năng này!'
+        'content' => 'Bạn phải đăng nhập để sử dụng chức năng này!'
       ]]);
     }
   }
@@ -105,7 +105,7 @@ class OrderController extends Controller
       return redirect()->route('login')->with(['alert' => [
         'type' => 'warning',
         'title' => 'Cảnh Báo',
-        'content' => 'Bạn phải ເຂົ້າສູ່ລະບົບ để sử dụng chức năng này!'
+        'content' => 'Bạn phải đăng nhập để sử dụng chức năng này!'
       ]]);
     }
   }

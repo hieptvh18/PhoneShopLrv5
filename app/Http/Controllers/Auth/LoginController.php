@@ -73,13 +73,13 @@ class LoginController extends Controller
         } else if($user->admin) {
             return redirect()->route('admin.dashboard')->with(['alert' => [
                 'type' => 'success',
-                'title' => 'ເຂົ້າສູ່ລະບົບ thành công',
+                'title' => 'Đăng nhập thành công',
                 'content' => 'Chào mừng bạn đến với trang quản trị website PhoneShop'
             ]]);
         } else {
             return redirect()->route('home_page')->with(['alert' => [
                 'type' => 'success',
-                'title' => 'ເຂົ້າສູ່ລະບົບ thành công',
+                'title' => 'Đăng nhập thành công',
                 'content' => 'Chào mừng bạn đến với website PhoneShop của chúng tôi'
             ]]);
         }

@@ -8,7 +8,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('home_page') }}">{{ __('header.Home') }}</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('products_page') }}">ສິນຄ້າ</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('products_page') }}">Sản Phẩm</a></li>
         <li class="breadcrumb-item"><a href="{{ route('producer_page', ['id' => $data['product']->producer_id]) }}">{{ $data['product']->producer->name }}</a></li>
         <li class="breadcrumb-item active" aria-current="page">{{ $data['product']->name }}</li>
       </ol>
@@ -30,9 +30,9 @@
       <div class="section-header">
         <h2 class="section-title">{{ $data['product']->name }}</h2>
         <div class="section-sub-title">
-          <div class="sku-code">Mã ສິນຄ້າ: <i>{{ $data['product']->sku_code }}</i></div>
+          <div class="sku-code">Mã Sản Phẩm: <i>{{ $data['product']->sku_code }}</i></div>
           <div class="start-vote">{!! Helper::get_start_vote($data['product']->rate) !!}</div>
-          <div class="rate-link" onclick="scrollToxx();"><span>Đánh ລາຄາ ສິນຄ້າ</span></div>
+          <div class="rate-link" onclick="scrollToxx();"><span>Đánh ລາຄາ Sản Phẩm</span></div>
         </div>
       </div>
       <div class="section-content">
@@ -189,7 +189,7 @@
                     <div class="content-vote">
                       @if(Auth::check())
                       <div class="section-rating">
-                        <div class="rating-title">Đánh ລາຄາ ສິນຄ້າ</div>
+                        <div class="rating-title">Đánh ລາຄາ Sản Phẩm</div>
                         <div class="rating-content">
                           <div class="rating-product"></div>
                           <div class="rating-form">
@@ -270,7 +270,7 @@
               </div>
               <div class="suggest-product">
                 <div class="suggest-header">
-                  <h2>ສິນຄ້າ Cùng ປະເພດ</h2>
+                  <h2>Sản Phẩm Cùng ປະເພດ</h2>
                 </div>
                 @if($data['suggest_products']->isNotEmpty())
                   <div class="suggest-content">

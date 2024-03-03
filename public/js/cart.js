@@ -139,7 +139,7 @@ function minus(id) {
           formatMoney(data.response.totalPrice, "{{amount_no_decimals_with_comma_separator}}₫")
         );
         $('.site-cart .section-cart .section-header .section-title>span').empty();
-        $('.site-cart .section-cart .section-header .section-title>span').append('( ' + data.response.totalQty + ' ສິນຄ້າ )');
+        $('.site-cart .section-cart .section-header .section-title>span').append('( ' + data.response.totalQty + ' sản phẩm )');
       },
       error: function(data) {
         var errors = data.responseJSON;
@@ -191,7 +191,7 @@ function plus(id) {
           formatMoney(data.response.totalPrice, "{{amount_no_decimals_with_comma_separator}}₫")
         );
         $('.site-cart .section-cart .section-header .section-title>span').empty();
-        $('.site-cart .section-cart .section-header .section-title>span').append('( ' + data.response.totalQty + ' ສິນຄ້າ )');
+        $('.site-cart .section-cart .section-header .section-title>span').append('( ' + data.response.totalQty + ' sản phẩm )');
       },
       error: function(data) {
         var errors = data.responseJSON;

@@ -93,7 +93,7 @@
                     </div>
                     <!-- /.chart-responsive -->
                     <p class="text-center">
-                      <i>Hình 2: Thị phần ສິນຄ້າ bán được theo nhà sản xuất</i>
+                      <i>Hình 2: Thị phần Sản Phẩm bán được theo nhà sản xuất</i>
                     </p>
                   </div>
                   <!-- /.col -->
@@ -134,7 +134,7 @@
                   <div class="col-sm-3 col-xs-3">
                     <div class="description-block border-right description-product">
                       <h5 class="description-header">{{ $data['count_products'] }}</h5>
-                      <span class="description-text">ສິນຄ້າ BÁN RA</span>
+                      <span class="description-text">Sản Phẩm BÁN RA</span>
                     </div>
                     <!-- /.description-block -->
                   </div>
@@ -160,7 +160,7 @@
             </div>
             <div class="box box-default box-table">
               <div class="box-header with-border text-center">
-                <h3 class="box-title">Danh Sách ສິນຄ້າ Xuất Kho Tháng {{ date('m').' Năm '.date('Y') }}</h3>
+                <h3 class="box-title">Danh Sách Sản Phẩm Xuất Kho Tháng {{ date('m').' Năm '.date('Y') }}</h3>
               </div>
               <div class="box-body">
                 <div class="table-responsive">
@@ -168,8 +168,8 @@
                     <thead>
                       <tr>
                         <th style="text-align: center; vertical-align: middle;">STT</th>
-                        <th style="vertical-align: middle;">Mã ສິນຄ້າ</th>
-                        <th style="vertical-align: middle;">Tên ສິນຄ້າ</th>
+                        <th style="vertical-align: middle;">Mã Sản Phẩm</th>
+                        <th style="vertical-align: middle;">Tên Sản Phẩm</th>
                         <th style="vertical-align: middle;">Mầu Sắc</th>
                         <th style="vertical-align: middle;">Đơn Hàng</th>
                         <th style="vertical-align: middle;">Ngày Xuất</th>

@@ -82,7 +82,7 @@
 
             <div class="suggest-product">
               <div class="suggest-header">
-                <h2>ສິນຄ້າ Mới Nhất</h2>
+                <h2>Sản Phẩm Mới Nhất</h2>
               </div>
               @if($data['suggest_products']->isNotEmpty())
                 <div class="suggest-content">

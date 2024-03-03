@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'ສິນຄ້າ')
+@section('title', 'Sản Phẩm')
 
 @section('content')
 
@@ -8,7 +8,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('home_page') }}">{{ __('header.Home') }}</a></li>
-        <li class="breadcrumb-item active" aria-current="page">ສິນຄ້າ</li>
+        <li class="breadcrumb-item active" aria-current="page">Sản Phẩm</li>
       </ol>
     </nav>
   </section>

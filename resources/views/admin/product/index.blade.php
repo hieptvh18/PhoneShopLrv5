@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title', 'Quản Lý ສິນຄ້າ')
+@section('title', 'Quản Lý Sản Phẩm')
 
 @section('embed-css')
 <link rel="stylesheet" href="{{ asset('AdminLTE/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
@@ -53,7 +53,7 @@
 @section('breadcrumb')
 <ol class="breadcrumb">
   <li><a href="{{ route('admin.dashboard') }}"><i class="fa fa-dashboard"></i> Home</a></li>
-  <li class="active">Quản Lý ສິນຄ້າ</li>
+  <li class="active">Quản Lý Sản Phẩm</li>
 </ol>
 @endsection
 
@@ -89,8 +89,8 @@
               <tr>
                 <th data-width="10px">ID</th>
                 <th data-orderable="false" data-width="75px">Hình Ảnh</th>
-                <th data-orderable="false" data-width="85px">Mã ສິນຄ້າ</th>
-                <th data-orderable="false">Tên ສິນຄ້າ</th>
+                <th data-orderable="false" data-width="85px">Mã Sản Phẩm</th>
+                <th data-orderable="false">Tên Sản Phẩm</th>
                 <th data-width="90px">Hãng Sản Xuất</th>
                 <th data-width="85px">ລະບົບປະຕິບັດການ</th>
                 <th data-width="60px">Đánh ລາຄາ</th>
@@ -164,10 +164,10 @@
     var table = $('#product-table').DataTable({
       "language": {
         "zeroRecords":    "Không tìm thấy kết quả phù hợp",
-        "info":           "Hiển thị trang <b>_PAGE_/_PAGES_</b> của <b>_TOTAL_</b> ສິນຄ້າ",
-        "infoEmpty":      "Hiển thị trang <b>1/1</b> của <b>0</b> ສິນຄ້າ",
-        "infoFiltered":   "(ຄົ້ນຫາ từ <b>_MAX_</b> ສິນຄ້າ)",
-        "emptyTable": "Không có dữ liệu ສິນຄ້າ",
+        "info":           "Hiển thị trang <b>_PAGE_/_PAGES_</b> của <b>_TOTAL_</b> Sản Phẩm",
+        "infoEmpty":      "Hiển thị trang <b>1/1</b> của <b>0</b> Sản Phẩm",
+        "infoFiltered":   "(ຄົ້ນຫາ từ <b>_MAX_</b> Sản Phẩm)",
+        "emptyTable": "Không có dữ liệu Sản Phẩm",
       },
       "lengthChange": false,
        "autoWidth": false,
@@ -196,7 +196,7 @@
       Swal.fire({
         type: 'question',
         title: 'Thông báo',
-        text: 'Bạn có chắc muốn xóa ສິນຄ້າ này?',
+        text: 'Bạn có chắc muốn xóa sản phẩm này?',
         showCancelButton: true,
         confirmButtonColor: '#d33',
         cancelButtonColor: '#3085d6',

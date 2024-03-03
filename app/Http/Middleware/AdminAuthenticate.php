@@ -20,7 +20,7 @@ class AdminAuthenticate
             return redirect()->route('login')->with(['alert' => [
                 'type' => 'warning',
                 'title' => 'Từ chối truy cập!',
-                'content' => 'Bạn không có quyền truy cập. Hãy ເຂົ້າສູ່ລະບົບ tài khoản Admin để truy cập trang này.'
+                'content' => 'Bạn không có quyền truy cập. Hãy đăng nhập tài khoản Admin để truy cập trang này.'
             ]]);
         } else if(!Auth::user()->admin) {
             return redirect()->route('home_page')->with(['alert' => [

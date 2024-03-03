@@ -8,7 +8,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('home_page') }}">{{ __('header.Home') }}</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('products_page') }}">ສິນຄ້າ</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('products_page') }}">Sản Phẩm</a></li>
         <li class="breadcrumb-item active" aria-current="page">{{ $producer->name }}</li>
       </ol>
     </nav>

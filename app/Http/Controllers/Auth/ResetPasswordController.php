@@ -51,7 +51,7 @@ class ResetPasswordController extends Controller
         return redirect()->route('home_page')->with(['alert' => [
             'type' => 'success',
             'title' => 'Thay đổi mật khẩu thành công',
-            'content' => 'Mật khẩu đã được thay đổi. Bạn có thể ເຂົ້າສູ່ລະບົບ vào hệ thống ngay bây giờ.'
+            'content' => 'Mật khẩu đã được thay đổi. Bạn có thể đăng nhập vào hệ thống ngay bây giờ.'
         ]]);
     }
 

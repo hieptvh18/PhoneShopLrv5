@@ -92,7 +92,7 @@
                 <th>Tên Sản Phẩm</th>
                 <th>Mầu Sắc</th>
                 <th style="text-align: center;">Số Lượng</th>
-                <th>Đơn ລາຄາ</th>
+                <th>Đơn Giá</th>
                 <th>Tổng Tiền</th>
               </tr>
             </thead>

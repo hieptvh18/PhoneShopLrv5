@@ -137,7 +137,7 @@
         <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
           <div class="col-order">
             <div class="col-header">
-              <h2>Đơn Hàng <span data-qty="{{ $cart->totalQty }}">( {{ $cart->totalQty }} ສິນຄ້າ )</span></h2>
+              <h2>Đơn Hàng <span data-qty="{{ $cart->totalQty }}">( {{ $cart->totalQty }} Sản Phẩm )</span></h2>
             </div>
             <div class="col-content">
               <div class="section-items">

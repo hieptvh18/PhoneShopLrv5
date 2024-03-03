@@ -83,7 +83,7 @@
 
                 <div class="timeline-item">
 
-                  <h3 class="timeline-header"><a>{{ $user->name }}</a> đã đánh ລາຄາ <a>{{ $vote->rate }}</a> sao về ສິນຄ້າ <a>{{ $vote->product->name }}</a></h3>
+                  <h3 class="timeline-header"><a>{{ $user->name }}</a> đã đánh ລາຄາ <a>{{ $vote->rate }}</a> sao về Sản Phẩm <a>{{ $vote->product->name }}</a></h3>
 
                   <div class="timeline-body">
                     <b>Nội Dung:</b> {{ $vote->content }}
@@ -138,7 +138,7 @@
 
                 <div class="timeline-item">
 
-                  <h3 class="timeline-header"><a>{{ $user->name }}</a> đã mua <b style="color: #f30;">{{ $qty }}</b> ສິນຄ້າ với ລາຄາ trị <b style="color: #f30;">{{ number_format($price,0,',','.') }}</b> VNĐ</h3>
+                  <h3 class="timeline-header"><a>{{ $user->name }}</a> đã mua <b style="color: #f30;">{{ $qty }}</b> Sản Phẩm với ລາຄາ trị <b style="color: #f30;">{{ number_format($price,0,',','.') }}</b> VNĐ</h3>
 
                   <div class="timeline-body">
                     <div class="table-responsive">
@@ -146,8 +146,8 @@
                         <thead>
                           <tr>
                             <th class="text-center" style="vertical-align: middle;">STT</th>
-                            <th class="text-center" style="vertical-align: middle;">Mã<br>ສິນຄ້າ</th>
-                            <th class="text-center" style="vertical-align: middle;">Tên<br>ສິນຄ້າ</th>
+                            <th class="text-center" style="vertical-align: middle;">Mã<br>Sản Phẩm</th>
+                            <th class="text-center" style="vertical-align: middle;">Tên<br>Sản Phẩm</th>
                             <th class="text-center" style="vertical-align: middle;">Mầu Sắc</th>
                             <th class="text-center" style="vertical-align: middle;">Số Lượng</th>
                             <th class="text-center" style="vertical-align: middle;">Đơn ລາຄາ</th>

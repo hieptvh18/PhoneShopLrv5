@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title', 'Chỉnh Sửa ສິນຄ້າ')
+@section('title', 'Chỉnh Sửa Sản Phẩm')
 
 @section('embed-css')
 <!-- include Bootstrap File Input -->
@@ -29,8 +29,8 @@
 @section('breadcrumb')
 <ol class="breadcrumb">
   <li><a href="{{ route('admin.dashboard') }}"><i class="fa fa-dashboard"></i> Home</a></li>
-  <li><a href="{{ route('admin.product.index') }}"><i class="fa fa-product-hunt" aria-hidden="true"></i> Quản Lý ສິນຄ້າ</a></li>
-  <li class="active">Chỉnh Sửa ສິນຄ້າ</li>
+  <li><a href="{{ route('admin.product.index') }}"><i class="fa fa-product-hunt" aria-hidden="true"></i> Quản Lý Sản Phẩm</a></li>
+  <li class="active">Chỉnh Sửa Sản Phẩm</li>
 </ol>
 @endsection
 
@@ -40,7 +40,7 @@
   @csrf
   <div class="box box-primary">
     <div class="box-header">
-      <h3 class="box-title">Thông Tin ສິນຄ້າ</h3>
+      <h3 class="box-title">Thông Tin Sản Phẩm</h3>
       <div class="box-tools">
         <!-- This will cause the box to collapse when clicked -->
         <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
@@ -60,14 +60,14 @@
           <div class="row">
             <div class="col-md-4">
               <div class="form-group">
-                <label for="name">Tên ສິນຄ້າ <span class="text-red">*</span></label>
-                <input type="text" name="name" class="form-control" id="name" placeholder="Tên ສິນຄ້າ" required autocomplete="off" value="{{ $product->name }}">
+                <label for="name">Tên Sản Phẩm <span class="text-red">*</span></label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Tên Sản Phẩm" required autocomplete="off" value="{{ $product->name }}">
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="sku_code">Mã ສິນຄ້າ <span class="text-red">*</span></label>
-                <input type="text" name="sku_code" class="form-control" id="sku_code" placeholder="Mã ສິນຄ້າ" required autocomplete="off" value="{{ $product->sku_code }}">
+                <label for="sku_code">Mã Sản Phẩm <span class="text-red">*</span></label>
+                <input type="text" name="sku_code" class="form-control" id="sku_code" placeholder="Mã Sản Phẩm" required autocomplete="off" value="{{ $product->sku_code }}">
               </div>
             </div>
             <div class="col-md-4">
@@ -205,7 +205,7 @@
   </div>
   <div class="box box-primary">
     <div class="box-header with-border">
-      <h3 class="box-title">Thông Tin Mầu Sắc Và ລາຄາ ສິນຄ້າ</h3>
+      <h3 class="box-title">Thông Tin Mầu Sắc Và ລາຄາ Sản Phẩm</h3>
       <div class="box-tools">
         <!-- This will cause the box to collapse when clicked -->
         <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
@@ -285,13 +285,13 @@
       </div>
     </div>
     <div class="text-center box-footer">
-      <button class="add btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Thêm Mầu Sắc ສິນຄ້າ</button>
+      <button class="add btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Thêm Mầu Sắc Sản Phẩm</button>
     </div>
   </div>
   <div class="nav-tabs-custom">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#product-information" data-toggle="tab">Cấu Hình Chi Tiết</a></li>
-      <li><a href="#product-introduction" data-toggle="tab">Bài Viết ສິນຄ້າ</a></li>
+      <li><a href="#product-introduction" data-toggle="tab">Bài Viết Sản Phẩm</a></li>
     </ul>
     <div class="tab-content">
       <div class="active tab-pane" id="product-information">
@@ -718,7 +718,7 @@
       Swal.fire({
         type: 'question',
         title: 'Thông báo',
-        text: 'Bạn có chắc muốn xóa chi tiết ສິນຄ້າ này?',
+        text: 'Bạn có chắc muốn xóa chi tiết Sản Phẩm này?',
         showCancelButton: true,
         confirmButtonColor: '#d33',
         cancelButtonColor: '#3085d6',

@@ -14,6 +14,6 @@ return [
     */
 
     'failed' => 'Email hoặc mật khẩu không chính xác!',
-    'throttle' => 'ເຂົ້າສູ່ລະບົບ thất bại quá nhiều lần! Vui lòng ເຂົ້າສູ່ລະບົບ lại sau :seconds giây.',
+    'throttle' => 'đăng nhập thất bại quá nhiều lần! Vui lòng đăng nhập lại sau :seconds giây.',
 
 ];

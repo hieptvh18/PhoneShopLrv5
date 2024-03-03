@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'ໜັ້າຫຼັກ')
+@section('title', 'Trang chủ')
 
 @section('content')
 <div class="sub-header">
@@ -8,6 +8,13 @@
     <div class="icon"><img src="{{asset('images/menu-bar.svg')}}" alt=""></div>
     <div class="text">DANH MỤC</div>
     <div class="icon"><img src="{{asset('images/menu-down-circle.svg')}}" alt=""></div>
+    
+    {{-- sub header content --}}
+    <div class="sub-header__dropdown">
+      @foreach($data['producers'] as $producer)
+          <a class="sub-header__dropdown-item" href="{{ route('producer_page', ['id' => $producer->id]) }}" title="{{ $producer->name }}">{{ $producer->name }}</a>
+      @endforeach
+    </div>
   </div>
   <div class="sub-header__item d-flex">
     <div><img src="{{asset('images/giao-nhanh-2h.webp')}}" alt=""></div>
@@ -17,28 +24,28 @@
     </div>
   </div>
   <div class="sub-header__item d-flex">
-    <div><img src="{{asset('images/giao-nhanh-2h.webp')}}" alt=""></div>
+    <div><img src="{{asset('images/tu-van-mien-phi.webp')}}" alt=""></div>
     <div>
       <div class="sub-menu__item-top">Tư vấn miễn phí</div>
       <div class=sub-menu__item-bottom>19008198</div>
     </div>
   </div>
   <div class="sub-header__item d-flex">
-    <div><img src="{{asset('images/giao-nhanh-2h.webp')}}" alt=""></div>
+    <div><img src="{{asset('images/doi-tra-mien-phi.webp')}}" alt=""></div>
     <div>
       <div class="sub-menu__item-top">Đổi trả miễn phí</div>
       <div class=sub-menu__item-bottom>Miễn phí-An toàn</div>
     </div>
   </div>
   <div class="sub-header__item d-flex">
-    <div><img src="{{asset('images/giao-nhanh-2h.webp')}}" alt=""></div>
+    <div><img src="{{asset('images/mien-phi-thanh-toan.webp')}}" alt=""></div>
     <div>
       <div class="sub-menu__item-top">Miễn phí thanh toán</div>
       <div class=sub-menu__item-bottom>Visa Master ATM</div>
     </div>
   </div>
   <div class="sub-header__item d-flex">
-    <div><img src="{{asset('images/giao-nhanh-2h.webp')}}" alt=""></div>
+    <div><img src="{{asset('images/tra-gop-0-lai-suat.webp')}}" alt=""></div>
     <div>
       <div class="sub-menu__item-top">Trả góp lãi 0%</div>
       <div class=sub-menu__item-bottom>Online - Tận Nhà</div>

@@ -77,7 +77,8 @@
   </div>
   <div class="footer-bottom">
     <div class="copyright text-center">
-      Copyright &copy 2024 Phonethong. All rights reserved.
+      Copyright &copy 2024 Sybounma Sing
+      . All rights reserved.
     </div>
   </div>
 </footer>

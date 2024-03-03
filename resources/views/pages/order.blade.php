@@ -38,7 +38,7 @@
     <section class="section-order">
       <div class="section-header">
         <div class="section-header-left">
-          <h2 class="section-title">{{ $data['order']->order_code }} <span>( {{ $qty }} ສິນຄ້າ)</span></h2>
+          <h2 class="section-title">{{ $data['order']->order_code }} <span>( {{ $qty }} Sản Phẩm)</span></h2>
         </div>
         <div class="section-header-right">
           Ngày tạo: {{ date_format($data['order']->created_at, 'd/m/Y') }}
@@ -83,7 +83,7 @@
                     <div class="order-info-content">
                       <div><span>Mã Hóa Đơn</span> <span>{{ $data['order']->order_code }}</span></div>
                       <div><span>Phương Thức Thanh Toán</span> <span>{{ $data['order']->payment_method->name }}</span></div>
-                      <div><span>Số Lượng</span> <span>{{ $qty }} ສິນຄ້າ</span></div>
+                      <div><span>Số Lượng</span> <span>{{ $qty }} Sản Phẩm</span></div>
                       <div><span>Đơn ລາຄາ</span> <span style="color: #f30;">{{ number_format($price,0,',','.') }}₫</span></div>
                     </div>
                   </div>
@@ -96,8 +96,8 @@
                   <thead>
                     <tr>
                       <th class="text-center">STT</th>
-                      <th class="text-center">Mã<br>ສິນຄ້າ</th>
-                      <th class="text-center">Tên<br>ສິນຄ້າ</th>
+                      <th class="text-center">Mã<br>Sản Phẩm</th>
+                      <th class="text-center">Tên<br>Sản Phẩm</th>
                       <th class="text-center">Mầu Sắc</th>
                       <th class="text-center">Số Lượng</th>
                       <th class="text-center">Đơn ລາຄາ</th>

@@ -58,7 +58,7 @@
           </div>
         </div>
       @else
-        <div class="no-item"><p>Không có ສິນຄ້າ nào trong giỏ hàng.</p></div>
+        <div class="no-item"><p>Không có Sản Phẩm nào trong giỏ hàng.</p></div>
       @endif
     </ul>
   </div>

@@ -19,7 +19,7 @@ class UserAuthenticate
             return redirect()->route('login')->with(['alert' => [
                 'type' => 'warning',
                 'title' => 'Từ chối truy cập!',
-                'content' => 'Bạn không có quyền truy cập. Hãy ເຂົ້າສູ່ລະບົບ để truy cập trang này.'
+                'content' => 'Bạn không có quyền truy cập. Hãy đăng nhập để truy cập trang này.'
             ]]);
         } else if(Auth::user()->admin) {
             return redirect()->route('admin.dashboard');

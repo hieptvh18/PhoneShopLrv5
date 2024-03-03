@@ -26,7 +26,7 @@
 
     <section class="section-cart">
       <div class="section-header">
-        <h2 class="section-title">Giỏ Hàng <span>( {{ $cart->totalQty }} ສິນຄ້າ )</span></h2>
+        <h2 class="section-title">Giỏ Hàng <span>( {{ $cart->totalQty }} Sản Phẩm )</span></h2>
       </div>
       <div class="section-content">
         @if(!$cart->totalQty)
