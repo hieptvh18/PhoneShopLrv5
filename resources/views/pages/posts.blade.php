@@ -1,7 +1,7 @@
 
 @extends('layouts.master')
 
-@section('title', 'ຂ່າວສານ')
+@section('title', 'Tin tức')
 
 @section('content')
 
@@ -9,7 +9,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('home_page') }}">{{ __('header.Home') }}</a></li>
-        <li class="breadcrumb-item active" aria-current="page">ຂ່າວສານ</li>
+        <li class="breadcrumb-item active" aria-current="page">Tin tức</li>
       </ol>
     </nav>
   </section>
@@ -30,7 +30,7 @@
         <div class="col-lg-8 col-md-8">
           <div class="section-left">
             <div class="section-header">
-              <h2 class="section-title">ຂ່າວສານ</h2>
+              <h2 class="section-title">Tin tức</h2>
             </div>
             <div class="section-content">
               @if($data['posts']->isEmpty())

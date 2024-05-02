@@ -26,9 +26,9 @@
           <h2 class="page-header">
             <div style="display: inline-flex; align-items: center;">
               <div style="width: 30px; margin-right: 5px;">
-                <img src="{{ asset('images/favicon.png') }}" alt="PhoneShop Logo" style="width: 100%; height: auto; object-fit: cover;">
+                <img src="{{ asset('images/favicon.png') }}" alt="DienThoaiGiaKho Logo" style="width: 100%; height: auto; object-fit: cover;">
               </div>
-              <div style="color: #f33;">PhoneShop</div>
+              <div style="color: #f33;">DienThoaiGiaKho</div>
             </div>
             <small class="pull-right">Date: {{ date("d/m/Y") }}</small>
           </h2>
@@ -42,7 +42,7 @@
             From: <br>
             <br>
             <address>
-              <b>Admin PhoneShop</b><br>
+              <b>Admin DienThoaiGiaKho</b><br>
               Phone: (+84) 967 999 999<br>
               Email: phonethongok@gmail.com<br>
               Address:  Số 117 Nguyễn Viết Xuân, Vinh, Nghệ An.

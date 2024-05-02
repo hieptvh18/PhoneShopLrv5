@@ -217,7 +217,7 @@
         "zeroRecords":    "Không tìm thấy kết quả phù hợp",
         "info":           "Hiển thị trang <b>_PAGE_/_PAGES_</b> của <b>_TOTAL_</b> tài khoản",
         "infoEmpty":      "Hiển thị trang <b>1/1</b> của <b>0</b> tài khoản",
-        "infoFiltered":   "(ຄົ້ນຫາ từ <b>_MAX_</b> tài khoản)",
+        "infoFiltered":   "(Tìm kiếm từ <b>_MAX_</b> tài khoản)",
         "emptyTable": "Không có dữ liệu tài khoản",
       },
       "lengthChange": false,

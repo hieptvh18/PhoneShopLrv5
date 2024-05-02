@@ -174,8 +174,8 @@
                         <th style="vertical-align: middle;">Đơn Hàng</th>
                         <th style="vertical-align: middle;">Ngày Xuất</th>
                         <th style="text-align: center; vertical-align: middle;">Số Lượng</th>
-                        <th style="vertical-align: middle;">ລາຄາ Nhập</th>
-                        <th style="vertical-align: middle;">ລາຄາ Xuất</th>
+                        <th style="vertical-align: middle;">Giá Nhập</th>
+                        <th style="vertical-align: middle;">Giá Xuất</th>
                         <th style="vertical-align: middle;">Doanh Thu</th>
                         <th style="vertical-align: middle;">Lợi Nhuận</th>
                       </tr>
@@ -509,7 +509,7 @@
         printable: 'print',
         type: 'html',
         documentTitle: ' ',
-        header: 'Báo Cáo Tình Hình Kinh Doanh Website PhoneShop',
+        header: 'Báo Cáo Tình Hình Kinh Doanh Website DienThoaiGiaKho',
         headerStyle: 'font-size: 14px; margin-bottom: 10px;',
         style: '.box { margin-top: 10px; border-top: none; box-shadow: none; } ' +
                 '@media print { .box-footer { page-break-after: always; } } ' +

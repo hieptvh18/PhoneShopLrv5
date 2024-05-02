@@ -146,7 +146,7 @@
         "zeroRecords":    "Không tìm thấy kết quả phù hợp",
         "info":           "Hiển thị trang <b>_PAGE_/_PAGES_</b> của <b>_TOTAL_</b> đơn hàng",
         "infoEmpty":      "Hiển thị trang <b>1/1</b> của <b>0</b> đơn hàng",
-        "infoFiltered":   "(ຄົ້ນຫາ từ <b>_MAX_</b> đơn hàng)",
+        "infoFiltered":   "(Tìm kiếm từ <b>_MAX_</b> đơn hàng)",
         "emptyTable": "Không có dữ liệu đơn hàng",
       },
       "lengthChange": false,

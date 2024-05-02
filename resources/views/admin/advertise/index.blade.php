@@ -110,7 +110,7 @@
                   </td>
                   <td>
                     @if($advertise->at_home_page)
-                      ໜັ້າຫຼັກ
+                      Trang chủ
                     @else
                       Trang Thường
                     @endif
@@ -164,7 +164,7 @@
         "zeroRecords":    "Không tìm thấy kết quả phù hợp",
         "info":           "Hiển thị trang <b>_PAGE_/_PAGES_</b> của <b>_TOTAL_</b> hình ảnh quảng cáo",
         "infoEmpty":      "Hiển thị trang <b>1/1</b> của <b>0</b> hình ảnh quảng cáo",
-        "infoFiltered":   "(ຄົ້ນຫາ từ <b>_MAX_</b> hình ảnh quảng cáo)",
+        "infoFiltered":   "(Tìm kiếm từ <b>_MAX_</b> hình ảnh quảng cáo)",
         "emptyTable": "Không có dữ liệu hình ảnh quảng cáo",
       },
       "lengthChange": false,

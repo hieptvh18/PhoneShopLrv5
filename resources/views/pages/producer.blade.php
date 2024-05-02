@@ -35,12 +35,12 @@
             <div class="col-md-10">
               <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-6">
-                  <input type="text" name="name" placeholder="ຄົ້ນຫາ..." value="{{ Request::input('name') }}">
+                  <input type="text" name="name" placeholder="Tìm kiếm..." value="{{ Request::input('name') }}">
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                   <select name='os'>
                     <option value='' {{ Request::input('os') == null ? 'selected' : '' }}>
-                      ລະບົບປະຕິບັດການ
+                      hệ điều hành
                     </option>
                     <option value='ios' {{ Request::input('os') == 'ios' ? 'selected' : '' }}>IOS</option>
                     <option value='android' {{ Request::input('os') == 'android' ? 'selected' : '' }}>
@@ -54,26 +54,26 @@
                 <div class="col-md-3 col-sm-6 col-xs-6">
                   <select name='price'>
                     <option value='' {{ Request::input('price') == null ? 'selected' : '' }}>
-                      ລາຄາ ສິນຄ້າ
+                      Giá sản phẩm
                     </option>
                     <option value='asc' {{ Request::input('price') == 'asc' ? 'selected' : '' }}>
-                      ລາຄາ từ thấp tới cao
+                      Giá từ thấp tới cao
                     </option>
                     <option value='desc' {{ Request::input('price') == 'desc' ? 'selected' : '' }}>
-                      ລາຄາ từ cao tới thấp
+                      Giá từ cao tới thấp
                     </option>
                   </select>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                   <select name='type'>
                     <option value='' {{ Request::input('type') == null ? 'selected' : '' }}>
-                      ປະເພດ ສິນຄ້າ
+                      Loại sản phẩm
                     </option>
                     <option value='promotion' {{ Request::input('type') == 'promotion' ? 'selected' : '' }}>
-                      ສິນຄ້າ khuyến mại
+                      Sản phẩm khuyến mại
                     </option>
                     <option value='vote' {{ Request::input('type') == 'vote' ? 'selected' : '' }}>
-                      ສິນຄ້າ đánh ລາຄາ cao
+                      Sản phẩm đánh giá cao
                     </option>
                   </select>
                 </div>

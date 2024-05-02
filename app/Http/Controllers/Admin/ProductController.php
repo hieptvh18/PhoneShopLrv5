@@ -46,7 +46,7 @@ class ProductController extends Controller
 
       $data['type'] = 'error';
       $data['title'] = 'Thất Bại';
-      $data['content'] = 'Bạn không thể xóa ສິນຄ້າ không tồn tại!';
+      $data['content'] = 'Bạn không thể xóa sản phẩm không tồn tại!';
     } else {
 
       $can_delete = 1;
@@ -97,7 +97,7 @@ class ProductController extends Controller
 
       $data['type'] = 'success';
       $data['title'] = 'Thành Công';
-      $data['content'] = 'Xóa ສິນຄ້າ thành công!';
+      $data['content'] = 'Xóa sản phẩm thành công!';
     }
 
     return response()->json($data, 200);
@@ -295,7 +295,7 @@ class ProductController extends Controller
     return redirect()->route('admin.product.index')->with(['alert' => [
       'type' => 'success',
       'title' => 'Thành Công',
-      'content' => 'Thêm ສິນຄ້າ thành công.'
+      'content' => 'Thêm sản phẩm thành công.'
     ]]);
   }
 
@@ -584,7 +584,7 @@ class ProductController extends Controller
     return redirect()->route('admin.product.index')->with(['alert' => [
       'type' => 'success',
       'title' => 'Thành Công',
-      'content' => 'Chỉnh sửa ສິນຄ້າ thành công.'
+      'content' => 'Chỉnh sửa sản phẩm thành công.'
     ]]);
   }
 
@@ -617,7 +617,7 @@ class ProductController extends Controller
 
       $data['type'] = 'error';
       $data['title'] = 'Thất Bại';
-      $data['content'] = 'Bạn không thể xóa chi tiết ສິນຄ້າ không tồn tại!';
+      $data['content'] = 'Bạn không thể xóa chi tiết sản phẩm không tồn tại!';
     } else {
 
       if($product_detail->import_quantity == $product_detail->quantity) {
@@ -634,7 +634,7 @@ class ProductController extends Controller
 
       $data['type'] = 'success';
       $data['title'] = 'Thành Công';
-      $data['content'] = 'Xóa chi tiết ສິນຄ້າ thành công!';
+      $data['content'] = 'Xóa chi tiết sản phẩm thành công!';
     }
 
     return response()->json($data, 200);

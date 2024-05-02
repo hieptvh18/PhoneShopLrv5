@@ -33,7 +33,7 @@ class CartController extends Controller
     $oldCart = Session::has('cart') ? Session::get('cart') : NULL;
     $cart = new Cart($oldCart);
     if(!$cart->add($product, $product->id, $request->qty)) {
-      $data['msg'] = 'Số lượng ສິນຄ້າ trong giỏ vượt quá số lượng ສິນຄ້າ trong kho!';
+      $data['msg'] = 'Số lượng sản phẩm trong giỏ vượt quá số lượng sản phẩm trong kho!';
       return response()->json($data, 412);
     }
     Session::put('cart', $cart);
@@ -51,12 +51,12 @@ class CartController extends Controller
     $cart = new Cart($oldCart);
 
     if(!$cart->remove($request->id)) {
-      $data['msg'] = 'ສິນຄ້າ không tồn tại!';
+      $data['msg'] = 'sản phẩm không tồn tại!';
       return response()->json($data, 404);
     } else {
       Session::put('cart', $cart);
 
-      $data['msg'] = "Xóa ສິນຄ້າ thành công";
+      $data['msg'] = "Xóa sản phẩm thành công";
       $data['url'] = route('home_page');
       $data['response'] = Session::get('cart');
 
@@ -68,7 +68,7 @@ class CartController extends Controller
     $oldCart = Session::has('cart') ? Session::get('cart') : NULL;
     $cart = new Cart($oldCart);
     if(!$cart->updateItem($request->id, $request->qty)) {
-      $data['msg'] = 'Số lượng ສິນຄ້າ trong giỏ vượt quá số lượng ສິນຄ້າ trong kho!';
+      $data['msg'] = 'Số lượng sản phẩm trong giỏ vượt quá số lượng sản phẩm trong kho!';
       return response()->json($data, 412);
     }
     Session::put('cart', $cart);
@@ -90,7 +90,7 @@ class CartController extends Controller
     $oldCart = Session::has('cart') ? Session::get('cart') : NULL;
     $cart = new Cart($oldCart);
     if(!$cart->updateItem($request->id, $request->qty)) {
-      $data['msg'] = 'Số lượng ສິນຄ້າ trong giỏ vượt quá số lượng ສິນຄ້າ trong kho!';
+      $data['msg'] = 'Số lượng sản phẩm trong giỏ vượt quá số lượng sản phẩm trong kho!';
       return response()->json($data, 412);
     }
     Session::put('cart', $cart);
@@ -135,7 +135,7 @@ class CartController extends Controller
           return back()->with(['alert' => [
               'type' => 'warning',
               'title' => 'Thông Báo',
-              'content' => 'Số lượng ສິນຄ້າ trong giỏ vượt quá số lượng ສິນຄ້າ trong kho!'
+              'content' => 'Số lượng sản phẩm trong giỏ vượt quá số lượng sản phẩm trong kho!'
           ]]);
         }
         return view('pages.checkout')->with(['cart' => $cart, 'payment_methods' => $payment_methods, 'buy_method' =>$request->type]);
@@ -192,7 +192,7 @@ class CartController extends Controller
         return redirect()->route('home_page')->with(['alert' => [
           'type' => 'success',
           'title' => 'Mua hàng thành công',
-          'content' => 'Cảm ơn bạn đã tin tưởng và sử dụng dịch vụ của chúng tôi. ສິນຄ້າ của bạn sẽ được chuyển đến trong thời gian sớm nhất.'
+          'content' => 'Cảm ơn bạn đã tin tưởng và sử dụng dịch vụ của chúng tôi. sản phẩm của bạn sẽ được chuyển đến trong thời gian sớm nhất.'
         ]]);
       } elseif ($request->buy_method == 'buy_cart') {
         $cart = Session::get('cart');
@@ -224,7 +224,7 @@ class CartController extends Controller
         return redirect()->route('home_page')->with(['alert' => [
           'type' => 'success',
           'title' => 'Mua hàng thành công',
-          'content' => 'Cảm ơn bạn đã tin tưởng và sử dụng dịch vụ của chúng tôi. ສິນຄ້າ của bạn sẽ được chuyển đến trong thời gian sớm nhất.'
+          'content' => 'Cảm ơn bạn đã tin tưởng và sử dụng dịch vụ của chúng tôi. sản phẩm của bạn sẽ được chuyển đến trong thời gian sớm nhất.'
         ]]);
       }
     } elseif(Str::contains($payment_method->name, 'Online Payment')) {

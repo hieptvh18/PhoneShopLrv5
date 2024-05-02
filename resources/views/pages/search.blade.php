@@ -1,7 +1,7 @@
 
 @extends('layouts.master')
 
-@section('title', 'ຄົ້ນຫາ')
+@section('title', 'Tìm kiếm')
 
 @section('content')
 
@@ -9,7 +9,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('home_page') }}">{{ __('header.Home') }}</a></li>
-        <li class="breadcrumb-item active" aria-current="page">ຄົ້ນຫາ: {{ Request::get('search_key') }}</li>
+        <li class="breadcrumb-item active" aria-current="page">Tìm kiếm: {{ Request::get('search_key') }}</li>
       </ol>
     </nav>
   </section>

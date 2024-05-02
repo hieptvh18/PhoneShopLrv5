@@ -189,7 +189,7 @@ class StatisticController extends Controller
         $data['producer'][$order_detail->product_detail->product->producer->name]['profit'] = $data['producer'][$order_detail->product_detail->product->producer->name]['profit'] + $order_detail->quantity * ($order_detail->price - $order_detail->product_detail->import_price);
       }
       $data['text']['title1'] = 'Biểu Đồ Kinh Doanh Tháng '.$request->month.' Năm '.date('Y');
-      $data['text']['title2'] = 'Danh Sách ສິນຄ້າ Xuất Kho Tháng '.$request->month.' Năm '.date('Y');
+      $data['text']['title2'] = 'Danh Sách Sản Phẩm Xuất Kho Tháng '.$request->month.' Năm '.date('Y');
       $data['text']['revenue'] = 'DOANH THU THÁNG';
       $data['text']['profit'] = 'LỢI NHUẬN THÁNG';
 
@@ -275,7 +275,7 @@ class StatisticController extends Controller
         $data['producer'][$order_detail->product_detail->product->producer->name]['profit'] = $data['producer'][$order_detail->product_detail->product->producer->name]['profit'] + $order_detail->quantity * ($order_detail->price - $order_detail->product_detail->import_price);
       }
       $data['text']['title1'] = 'Biểu Đồ Kinh Doanh Tháng '.$request->month.' Năm '.$request->year;
-      $data['text']['title2'] = 'Danh Sách ສິນຄ້າ Xuất Kho Tháng '.$request->month.' Năm '.$request->year;
+      $data['text']['title2'] = 'Danh Sách Sản Phẩm Xuất Kho Tháng '.$request->month.' Năm '.$request->year;
       $data['text']['revenue'] = 'DOANH THU THÁNG';
       $data['text']['profit'] = 'LỢI NHUẬN THÁNG';
     } elseif($request->month == null && $request->year == null) {
@@ -360,7 +360,7 @@ class StatisticController extends Controller
         $data['producer'][$order_detail->product_detail->product->producer->name]['profit'] = $data['producer'][$order_detail->product_detail->product->producer->name]['profit'] + $order_detail->quantity * ($order_detail->price - $order_detail->product_detail->import_price);
       }
       $data['text']['title1'] = 'Biểu Đồ Kinh Doanh Tháng '.date('m').' Năm '.date('Y');
-      $data['text']['title2'] = 'Danh Sách ສິນຄ້າ Xuất Kho Tháng '.date('m').' Năm '.date('Y');
+      $data['text']['title2'] = 'Danh Sách Sản Phẩm Xuất Kho Tháng '.date('m').' Năm '.date('Y');
       $data['text']['revenue'] = 'DOANH THU THÁNG';
       $data['text']['profit'] = 'LỢI NHUẬN THÁNG';
     } elseif($request->month == null && $request->year != null) {
@@ -442,7 +442,7 @@ class StatisticController extends Controller
         $data['producer'][$order_detail->product_detail->product->producer->name]['profit'] = $data['producer'][$order_detail->product_detail->product->producer->name]['profit'] + $order_detail->quantity * ($order_detail->price - $order_detail->product_detail->import_price);
       }
       $data['text']['title1'] = 'Biểu Đồ Kinh Doanh Năm '.$request->year;
-      $data['text']['title2'] = 'Danh Sách ສິນຄ້າ Xuất Kho Năm '.$request->year;
+      $data['text']['title2'] = 'Danh Sách Sản Phẩm Xuất Kho Năm '.$request->year;
       $data['text']['revenue'] = 'DOANH THU NĂM';
       $data['text']['profit'] = 'LỢI NHUẬN NĂM';
     }

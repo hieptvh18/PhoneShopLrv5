@@ -105,9 +105,9 @@
           <div class="row">
             <div class="col-md-4">
               <div class="form-group">
-                <label>ລະບົບປະຕິບັດການ <span class="text-red">*</span></label>
+                <label>hệ điều hành <span class="text-red">*</span></label>
                 <select class="form-control" name="OS" required>
-                  <option value="">-- Chọn ລະບົບປະຕິບັດການ --</option>
+                  <option value="">-- Chọn hệ điều hành --</option>
                   <option value="Android">Android</option>
                   <option value="IOS">IOS</option>
                   <option value="Windows Phone">Windows Phone</option>
@@ -168,7 +168,7 @@
   </div>
   <div class="box box-primary">
     <div class="box-header with-border">
-      <h3 class="box-title">Thông Tin Mầu Sắc Và ລາຄາ Sản Phẩm</h3>
+      <h3 class="box-title">Thông Tin Mầu Sắc Và Giá Sản Phẩm</h3>
       <div class="box-tools">
         <!-- This will cause the box to collapse when clicked -->
         <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
@@ -539,22 +539,22 @@
         </div>
         <div class="col-md-4">
           <div class="form-group">
-            <label for="import_price_{?}">ລາຄາ Nhập (VNĐ) <span class="text-red">*</span></label>
-            <input type="text" name="product_details[{?}][import_price]" class="form-control currency" id="import_price_{?}" placeholder="ລາຄາ nhập" required autocomplete="off">
+            <label for="import_price_{?}">Giá Nhập (VNĐ) <span class="text-red">*</span></label>
+            <input type="text" name="product_details[{?}][import_price]" class="form-control currency" id="import_price_{?}" placeholder="Giá nhập" required autocomplete="off">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
           <div class="form-group">
-            <label for="sale_price_{?}">ລາຄາ Bán (VNĐ) <span class="text-red">*</span></label>
-            <input type="text" name="product_details[{?}][sale_price]" class="form-control currency" id="sale_price_{?}" placeholder="ລາຄາ bán" required autocomplete="off">
+            <label for="sale_price_{?}">Giá Bán (VNĐ) <span class="text-red">*</span></label>
+            <input type="text" name="product_details[{?}][sale_price]" class="form-control currency" id="sale_price_{?}" placeholder="Giá bán" required autocomplete="off">
           </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
-            <label for="promotion_price_{?}">ລາຄາ Khuyến Mại (VNĐ)</label>
-            <input type="text" name="product_details[{?}][promotion_price]" class="form-control currency" id="promotion_price_{?}" placeholder="ລາຄາ khuyến mại" autocomplete="off">
+            <label for="promotion_price_{?}">Giá Khuyến Mại (VNĐ)</label>
+            <input type="text" name="product_details[{?}][promotion_price]" class="form-control currency" id="promotion_price_{?}" placeholder="Giá khuyến mại" autocomplete="off">
           </div>
         </div>
         <div class="col-md-4">

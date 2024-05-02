@@ -92,8 +92,8 @@
                 <th data-orderable="false" data-width="85px">Mã Sản Phẩm</th>
                 <th data-orderable="false">Tên Sản Phẩm</th>
                 <th data-width="90px">Hãng Sản Xuất</th>
-                <th data-width="85px">ລະບົບປະຕິບັດການ</th>
-                <th data-width="60px">Đánh ລາຄາ</th>
+                <th data-width="85px">hệ điều hành</th>
+                <th data-width="60px">Đánh Giá</th>
                 <th data-width="60px" data-type="date-euro">Ngày Tạo</th>
                 <th data-width="66px">Trạng Thái</th>
                 <th data-orderable="false" data-width="70px">Tác Vụ</th>
@@ -166,7 +166,7 @@
         "zeroRecords":    "Không tìm thấy kết quả phù hợp",
         "info":           "Hiển thị trang <b>_PAGE_/_PAGES_</b> của <b>_TOTAL_</b> Sản Phẩm",
         "infoEmpty":      "Hiển thị trang <b>1/1</b> của <b>0</b> Sản Phẩm",
-        "infoFiltered":   "(ຄົ້ນຫາ từ <b>_MAX_</b> Sản Phẩm)",
+        "infoFiltered":   "(Tìm kiếm từ <b>_MAX_</b> Sản Phẩm)",
         "emptyTable": "Không có dữ liệu Sản Phẩm",
       },
       "lengthChange": false,

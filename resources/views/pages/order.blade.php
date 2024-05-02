@@ -84,7 +84,7 @@
                       <div><span>Mã Hóa Đơn</span> <span>{{ $data['order']->order_code }}</span></div>
                       <div><span>Phương Thức Thanh Toán</span> <span>{{ $data['order']->payment_method->name }}</span></div>
                       <div><span>Số Lượng</span> <span>{{ $qty }} Sản Phẩm</span></div>
-                      <div><span>Đơn ລາຄາ</span> <span style="color: #f30;">{{ number_format($price,0,',','.') }}₫</span></div>
+                      <div><span>Đơn GIá</span> <span style="color: #f30;">{{ number_format($price,0,',','.') }}₫</span></div>
                     </div>
                   </div>
                 </div>
@@ -100,7 +100,7 @@
                       <th class="text-center">Tên<br>Sản Phẩm</th>
                       <th class="text-center">Mầu Sắc</th>
                       <th class="text-center">Số Lượng</th>
-                      <th class="text-center">Đơn ລາຄາ</th>
+                      <th class="text-center">Đơn Giá</th>
                     </tr>
                   </thead>
                   <tbody>

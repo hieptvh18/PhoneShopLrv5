@@ -56,7 +56,7 @@
                   <label>Vị Trí Hiển Thị <span class="text-red">*</span></label>
                   <select class="form-control" name="at_home_page">
                     <option value="0"  @if( old('at_home_page') == NULL ) {{ $advertise->at_home_page ? '' : 'selected' }} @else {{ old('at_home_page') ? '' : 'selected' }} @endif>Trang Thường</option>
-                    <option value="1"  @if( old('at_home_page') == NULL ) {{ $advertise->at_home_page ? 'selected' : '' }} @else {{ old('at_home_page') ? 'selected' : '' }} @endif>ໜັ້າຫຼັກ</option>
+                    <option value="1"  @if( old('at_home_page') == NULL ) {{ $advertise->at_home_page ? 'selected' : '' }} @else {{ old('at_home_page') ? 'selected' : '' }} @endif>Trang chủ</option>
                   </select>
                 </div>
             </div>

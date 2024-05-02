@@ -4,5 +4,5 @@
     <b>AdminLTE</b> 2.4.18
   </div>
   <!-- Default to the left -->
-  <strong>Copyright &copy; 2024 <a href="#">PhoneShop</a>.</strong> All rights reserved.
+  <strong>Copyright &copy; 2024 <a href="#">DienThoaiGiaKho</a>.</strong> All rights reserved.
 </footer>

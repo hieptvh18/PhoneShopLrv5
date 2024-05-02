@@ -9,7 +9,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('home_page') }}">{{ __('header.Home') }}</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('posts_page') }}">ຂ່າວສານ</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('posts_page') }}">Tin tức</a></li>
         <li class="breadcrumb-item active" aria-current="page">{{ $data['post']->title }}</li>
       </ol>
     </nav>

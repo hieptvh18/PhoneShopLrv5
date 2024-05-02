@@ -32,7 +32,7 @@
         <div class="section-sub-title">
           <div class="sku-code">Mã Sản Phẩm: <i>{{ $data['product']->sku_code }}</i></div>
           <div class="start-vote">{!! Helper::get_start_vote($data['product']->rate) !!}</div>
-          <div class="rate-link" onclick="scrollToxx();"><span>Đánh ລາຄາ Sản Phẩm</span></div>
+          <div class="rate-link" onclick="scrollToxx();"><span>Đánh Giá Sản Phẩm</span></div>
         </div>
       </div>
       <div class="section-content">
@@ -76,7 +76,7 @@
                         @if($product->promotion_price != null && $product->promotion_start_date <= date('Y-m-d') && $product->promotion_end_date >= date('Y-m-d'))
                           <div class="sale-price">{{ number_format($product->promotion_price,0,',','.') }} <span>VNĐ</span></div>
                           <div class="promotion-price">
-                            <div class="old-price">ລາຄາ cũ: <del>{{ number_format($product->sale_price,0,',','.') }}</del> <span>VNĐ</span></div>
+                            <div class="old-price">Giá cũ: <del>{{ number_format($product->sale_price,0,',','.') }}</del> <span>VNĐ</span></div>
                             <div class="save-price">Giảm: <span>{{ number_format($product->sale_price - $product->promotion_price,0,',','.') }}</span> <span>VNĐ</span></div>
                           </div>
                         @else
@@ -170,7 +170,7 @@
                 <div class="tab-header">
                   <ul class="nav nav-tabs nav-tab-custom">
                     <li class="active"><a data-toggle="tab" href="#description">Mô Tả</a></li>
-                    <li><a data-toggle="tab" href="#vote">Nhận Xét Và Đánh ລາຄາ</a></li>
+                    <li><a data-toggle="tab" href="#vote">Nhận Xét Và Đánh Giá</a></li>
                   </ul>
                 </div>
                 <div class="tab-content">
@@ -189,7 +189,7 @@
                     <div class="content-vote">
                       @if(Auth::check())
                       <div class="section-rating">
-                        <div class="rating-title">Đánh ລາຄາ Sản Phẩm</div>
+                        <div class="rating-title">Đánh Giá Sản Phẩm</div>
                         <div class="rating-content">
                           <div class="rating-product"></div>
                           <div class="rating-form">
@@ -198,7 +198,7 @@
                               <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                               <input type="hidden" name="product_id" value="{{ $data['product']->id }}">
                               <textarea name="content" placeholder="Nội dung..." rows="3"></textarea>
-                              <button type="submit" class="btn btn-default">Gửi đánh ລາຄາ</button>
+                              <button type="submit" class="btn btn-default">Gửi đánh Giá</button>
                             </form>
                           </div>
                         </div>
@@ -206,7 +206,7 @@
                       @endif
                       <div class="show-rate">
                         <div class="show-rate-header">
-                          Đánh ລາຄາ từ người dùng
+                          Đánh Giá từ người dùng
                         </div>
                         <div class="show-rate-content">
                           <div class="total-rate">
@@ -235,7 +235,7 @@
                               @endforeach
                             </div>
                           @else
-                            <p class="text-center"><strong>Chưa có lượt đánh ລາຄາ nào từ người dùng. Hãy cho chúng tôi biết ý kiến của bạn.</strong></p>
+                            <p class="text-center"><strong>Chưa có lượt đánh Giá nào từ người dùng. Hãy cho chúng tôi biết ý kiến của bạn.</strong></p>
                           @endif
                         </div>
                       </div>
@@ -259,7 +259,7 @@
                     <li><label>CPU:</label>{{ $data['product']->CPU ?: 'Đang Cập Nhật...' }}</li>
                     <li><label>GPU:</label>{{ $data['product']->GPU ?: 'Đang Cập Nhật...' }}</li>
                     <li><label>Dung Lượng Pin:</label>{{ $data['product']->pin ?: 'Đang Cập Nhật...' }}</li>
-                    <li><label>ລະບົບປະຕິບັດການ:</label>{{ $data['product']->OS ?: 'Đang Cập Nhật...' }}</li>
+                    <li><label>hệ điều hành:</label>{{ $data['product']->OS ?: 'Đang Cập Nhật...' }}</li>
                   </ul>
                 </div>
                 <div class="more-infomation">

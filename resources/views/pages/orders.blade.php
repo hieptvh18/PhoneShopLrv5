@@ -41,7 +41,7 @@
                       <th class="text-center">Mã<br>Đơn Hàng</th>
                       <th class="text-center">Phương Thức<br>Thanh Toán</th>
                       <th class="text-center">Số Lượng</th>
-                      <th class="text-center">Đơn ລາຄາ</th>
+                      <th class="text-center">Đơn Giá</th>
                       <th class="text-center">Trạng Thái</th>
                     </tr>
                   </thead>

@@ -56,7 +56,7 @@
                 <label>Vị Trí Hiển Thị <span class="text-red">*</span></label>
                 <select class="form-control" name="at_home_page">
                   <option value="0" {{ old('at_home_page') ? '' : 'selected' }}>Trang Thường</option>
-                  <option value="1" {{ old('at_home_page') ? 'selected' : '' }}>ໜັ້າຫຼັກ</option>
+                  <option value="1" {{ old('at_home_page') ? 'selected' : '' }}>Trang chủ</option>
                 </select>
               </div>
             </div>
