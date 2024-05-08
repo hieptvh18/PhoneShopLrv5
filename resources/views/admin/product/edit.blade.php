@@ -232,7 +232,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label for="color_{{ $product_detail->id }}">Mầu Sắc <span class="text-red">*</span></label>
+                    <label for="color_{{ $product_detail->id }}">Màu Sắc <span class="text-red">*</span></label>
                     <input type="text" name="old_product_details[{{ $product_detail->id }}][color]" class="form-control color" id="color_{{ $product_detail->id }}" placeholder="Mầu sắc" required autocomplete="off" value="{{ $product_detail->color }}">
                   </div>
                 </div>

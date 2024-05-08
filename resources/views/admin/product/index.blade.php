@@ -91,6 +91,7 @@
                 <th data-orderable="false" data-width="75px">Hình Ảnh</th>
                 <th data-orderable="false" data-width="85px">Mã Sản Phẩm</th>
                 <th data-orderable="false">Tên Sản Phẩm</th>
+                <th data-orderable="false">Số lượng hàng</th>
                 <th data-width="90px">Hãng Sản Xuất</th>
                 <th data-width="85px">hệ điều hành</th>
                 <th data-width="60px">Đánh Giá</th>
@@ -114,6 +115,7 @@
                   <td>
                     <a class="text-left" href="{{ route('product_page', ['id' => $product->id]) }}" title="{{ $product->name }}">{{ $product->name }}</a>
                   </td>
+                  <td>...</td>
                   <td>{{ $product->producer->name }}</td>
                   <td>{{ $product->OS }}</td>
                   <td>{{ $product->rate }}/5 Điểm</td>
