@@ -100,7 +100,7 @@ class RegisterController extends Controller
             return redirect()->route('home_page')->with(['alert' => [
                 'type' => 'error',
                 'title' => 'Kích hoạt tài khoản không thành công',
-                'content' => 'Mã kích hoạt không đúng. vui lòng kiểm tra lại email ລົງທະບຽນ!'
+                'content' => 'Mã kích hoạt không đúng. vui lòng kiểm tra lại email đăng ký!'
             ]]);
         }
     }
@@ -120,7 +120,7 @@ class RegisterController extends Controller
 
         return redirect()->route('home_page')->with(['alert' => [
             'type' => 'success',
-            'title' => 'ລົງທະບຽນ tài khoản thành công',
+            'title' => 'Đăng ký tài khoản thành công',
             'content' => '.....'
         ]]);
     }

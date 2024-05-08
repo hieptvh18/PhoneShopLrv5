@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'ລົງທະບຽນ')
+@section('title', 'Đăng ký')
 
 @section('content')
   <section class="bread-crumb">
@@ -13,7 +13,7 @@
   </section>
   <div class="site-register">
     <div class="register-body">
-      <h2 class="title">ລົງທະບຽນ</h2>
+      <h2 class="title">Đăng ký</h2>
       <form action="{{ route('register') }}" method="POST" accept-charset="utf-8">
         @csrf
 

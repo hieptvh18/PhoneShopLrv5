@@ -137,12 +137,12 @@
     <div class="mb-menu-top-footer">
       <div class="mb-menu-action">
         <a href="{{ route('login') }}" class="btn btn-success">
-          <i class="fas fa-user"></i>ăng nhập
+          <i class="fas fa-user"></i>Đăng nhập
         </a>
       </div>
       <div class="mb-menu-action">
         <a href="{{ route('register') }}" class="btn btn-warning">
-          <i class="fas fa-key"></i> ລົງທະບຽນ
+          <i class="fas fa-key"></i> Đăng ký
         </a>
       </div>
     </div>
@@ -232,7 +232,7 @@
         <i class="fa fa-phone" aria-hidden="true"></i> HOTLINE: <a href="tel: +84 967 999 999" title="(+84) 967 999 999">(+84) 967 999 999</a>
       </div>
       <div class="info-support">
-        <i class="fa fa-envelope" aria-hidden="true"></i> EMAIL: <a href="mailto:phonethongok@gmail.com" title="phonethongok@gmail.com">phonethongok@gmail.com</a>
+        <i class="fa fa-envelope" aria-hidden="true"></i> EMAIL: <a href="mailto:phonethongok@gmail.com" title="phonethongok@gmail.com">dienthoaigiakho@gmail.com</a>
       </div>
     </div>
   </div>
