@@ -14,15 +14,27 @@ use App\Models\Promotion;
 use App\Models\ProductDetail;
 use App\Models\ProductImage;
 use App\Models\OrderDetail;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
   public function index()
   {
-    $products = Product::select('id', 'producer_id', 'name', 'image', 'sku_code', 'OS', 'rate', 'created_at')
-    ->whereHas('product_details', function (Builder $query) {
-      $query->where('import_quantity', '>', 0);
-    })
+    $products = Product::select(
+      'products.id',
+       'products.producer_id',
+        'products.name',
+         'products.image',
+          'products.sku_code',
+           'products.OS',
+            'products.rate',
+             'products.created_at',
+             DB::raw('sum(product_details.import_quantity) as total_quantity')
+             )
+    ->with('product_details')
+    // ->whereHas('product_details', function (Builder $query) {
+    //   $query->where('import_quantity', '>', 0);
+    // })
     ->with([
       'producer' => function ($query) {
         $query->select('id', 'name');
@@ -32,7 +44,19 @@ class ProductController extends Controller
     'product_details' => function (Builder $query) {
         $query->where([['import_quantity', '>', 0], ['quantity', '>', 0]]);
       }
-    ])->latest()->get();
+    ])
+    ->leftJoin('product_details','product_details.product_id','=','products.id')
+    ->groupBy('products.id',
+    'products.producer_id',
+     'products.name',
+      'products.image',
+       'products.sku_code',
+        'products.OS',
+         'products.rate',
+          'products.created_at')
+    ->latest()
+    ->get();
+    
     return view('admin.product.index')->with('products', $products);
   }
 
@@ -310,7 +334,7 @@ class ProductController extends Controller
         $query->select('id', 'product_id', 'content', 'start_date', 'end_date');
       },
       'product_details' => function ($query) {
-        $query->select('id', 'product_id', 'color', 'import_quantity', 'import_price', 'sale_price', 'promotion_price', 'promotion_start_date', 'promotion_end_date')->where('import_quantity', '>', 0)
+        $query->select('id', 'product_id', 'color', 'import_quantity', 'import_price', 'sale_price', 'promotion_price', 'promotion_start_date', 'promotion_end_date','quantity')->where('import_quantity', '>', 0)
         ->with([
           'product_images' => function ($query) {
             $query->select('id', 'product_detail_id', 'image_name');

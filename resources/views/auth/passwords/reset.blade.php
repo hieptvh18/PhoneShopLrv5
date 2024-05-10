@@ -39,7 +39,7 @@
 
           <div class="input-group">
             <span class="input-group-addon"><i class="fas fa-lock"></i></span>
-            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Password" required autocomplete="new-password" autofocus>
+            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Mật khẩu mới" required autocomplete="new-password" autofocus>
 
             @error('password')
               <span class="invalid-feedback" role="alert">
@@ -50,7 +50,7 @@
 
           <div class="input-group">
             <span class="input-group-addon"><i class="fas fa-lock"></i></span>
-            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Password Confirmation" required autocomplete="new-password">
+            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Nhập lại mật khẩu mới" required autocomplete="new-password">
           </div>
 
           <button type="submit" class="btn btn-default">Xác Nhận</button>
@@ -58,7 +58,7 @@
       </div>
 
       <div class="sign-up-now">
-        Not a member? <a href="{{ route('register') }}">Sign up now</a>
+        Chưa có tài khoản? <a href="{{ route('register') }}">Đăng ký ngay</a>
       </div>
   </div>
 @endsection

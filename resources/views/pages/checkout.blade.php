@@ -116,7 +116,7 @@
                             <p>{{ $payment_method->describe }}</p>
                           </div>
                         </li>
-                      @else
+                      {{-- @else
                         <li>
                           <label>
                             <input type="radio" value="{{ $payment_method->id }}" name="payment_method">
@@ -125,8 +125,8 @@
                           <div class="box-content">
                             <p>{{ $payment_method->describe }}</p>
                           </div>
-                        </li>
-                      @endif
+                        </li>--}}
+                      @endif 
                     @endforeach
                   </ul>
                 </div>

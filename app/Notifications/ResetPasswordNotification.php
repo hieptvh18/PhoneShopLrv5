@@ -57,9 +57,9 @@ class ResetPasswordNotification extends Notification
 
         return (new MailMessage)
             ->greeting('Dear '.$notifiable->name.'.')
-            ->subject('Reset Password Notification')
+            ->subject('Thông báo đặt lại  mật khẩu')
             ->line('Bạn nhận được email này vì chúng tôi đã nhận được yêu cầu đặt lại mật khẩu cho tài khoản của bạn. Vui lòng click vào nút bên dưới để thay đổi mật khẩu.')
-            ->action('Reset Password', route('password.reset', ['token' => $this->token, 'email' => $notifiable->getEmailForPasswordReset()]))
+            ->action('Đổi mật khẩu', route('password.reset', ['token' => $this->token, 'email' => $notifiable->getEmailForPasswordReset()]))
             ->line('Liên kết đặt lại mật khẩu này sẽ hết hạn sau '.config('auth.passwords.'.config('auth.defaults.passwords').'.expire').' phút.')
             ->line('Nếu bạn không yêu cầu đặt lại mật khẩu, hãy bỏ qua email này.');
     }

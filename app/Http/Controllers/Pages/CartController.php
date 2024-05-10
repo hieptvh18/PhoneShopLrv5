@@ -186,7 +186,7 @@ class CartController extends Controller
         $order_details->save();
 
         $product = ProductDetail::find($request->product_id);
-        $product->quantity = $product->quantity - $request->totalQty;
+        $product->import_quantity = (int)$product->import_quantity - (int)$request->totalQty;
         $product->save();
 
         return redirect()->route('home_page')->with(['alert' => [
@@ -217,7 +217,7 @@ class CartController extends Controller
           $order_details->save();
 
           $product = ProductDetail::find($item['item']->id);
-          $product->quantity = $product->quantity - $item['qty'];
+          $product->import_quantity = (int)$product->import_quantity - (int)$item['qty'];
           $product->save();
         }
         Session::forget('cart');
@@ -330,6 +330,7 @@ class CartController extends Controller
   }
 
   public function responsePayment(Request $request) {
+    dd('response payment function');
     if ($request->filled('payment_id')) {
 
       // Lấy các tham số để chuyển sang Ngânlượng thanh toán:

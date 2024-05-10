@@ -115,7 +115,7 @@
                   <td>
                     <a class="text-left" href="{{ route('product_page', ['id' => $product->id]) }}" title="{{ $product->name }}">{{ $product->name }}</a>
                   </td>
-                  <td>...</td>
+                  <td>{{$product->total_quantity}}</td>
                   <td>{{ $product->producer->name }}</td>
                   <td>{{ $product->OS }}</td>
                   <td>{{ $product->rate }}/5 Điểm</td>
